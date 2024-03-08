@@ -34,12 +34,17 @@ public static class ArraysTester {
     /// <returns>array of doubles that are the multiples of the supplied number</returns>
     private static double[] MultiplesOf(double number, int length)
     {
-        // TODO Problem 1 Start
-        // Remember: Using comments in your program, write down your process for solving this problem
-        // step by step before you write the code. The plan should be clear enough that it could
-        // be implemented by another person.
+     // Step 1: Create an array to hold the multiples
+    double[] multiples = new double[length];
 
-        return new double[0]; // replace this return statement with your own
+    // Step 2: Loop 'length' times to generate multiples
+    for (int i = 0; i < length; i++) {
+        // Step 3: Calculate each multiple and assign to the array
+        multiples[i] = number * (i + 1);
+    }
+
+    // Step 4: Return the array of multiples
+    return multiples;
     }
     
     /// <summary>
