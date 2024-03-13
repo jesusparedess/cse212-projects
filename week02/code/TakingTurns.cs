@@ -15,7 +15,7 @@
         // Console.WriteLine(players);    // This can be un-commented out for debug help
         while (players.Length > 0)
             players.GetNextPerson();
-        // Defect(s) Found: 
+        // Defect(s) Found: The turn order was incorrect
 
         Console.WriteLine("---------");
 
@@ -30,7 +30,7 @@
         players.AddPerson("Sue", 3);
         for (int i = 0; i < 5; i++) {
             players.GetNextPerson();
-            // Console.WriteLine(players);
+        // Console.WriteLine(players);
         }
 
         players.AddPerson("George", 3);
@@ -38,7 +38,7 @@
         while (players.Length > 0)
             players.GetNextPerson();
 
-        // Defect(s) Found: 
+        // Defect(s) Found: same as Test 1
 
         Console.WriteLine("---------");
 
@@ -54,9 +54,9 @@
         // Console.WriteLine(players);
         for (int i = 0; i < 10; i++) {
             players.GetNextPerson();
-            // Console.WriteLine(players);
+        // Console.WriteLine(players);
         }
-        // Defect(s) Found: 
+        // Defect(s) Found: The program was not handling infinite turns correctly.
 
         Console.WriteLine("---------");
 
@@ -71,9 +71,10 @@
         // Console.WriteLine(players);
         for (int i = 0; i < 10; i++) {
             players.GetNextPerson();
-            // Console.WriteLine(players);
+       // Console.WriteLine(players);
         }
-        // Defect(s) Found: 
+        // Defect(s) Found: Same issue as Test 3
+        
 
         Console.WriteLine("---------");
 
@@ -83,6 +84,6 @@
         Console.WriteLine("Test 5");
         players = new TakingTurnsQueue();
         players.GetNextPerson();
-        // Defect(s) Found:
+        // Defect(s) Found: No defects were found in this test case.
     }
 }
